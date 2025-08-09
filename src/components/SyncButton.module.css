@@ -1,0 +1,43 @@
+.syncButton {
+    padding: 12px 24px;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    background-color: #2563eb;
+    color: white;
+    border: none;
+    outline: none;
+}
+
+.syncButton:hover:not(:disabled) {
+    background-color: #1d4ed8;
+    transform: translateY(-1px);
+}
+
+.syncButton:disabled {
+    background-color: #94a3b8;
+    cursor: not-allowed;
+}
+
+.syncing {
+    background-color: #dc2626;
+    animation: pulse 2s infinite;
+}
+
+.syncing:hover {
+    background-color: #b91c1c;
+}
+
+@keyframes pulse {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0.7;
+    }
+    100% {
+        opacity: 1;
+    }
+}
